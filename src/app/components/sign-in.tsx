@@ -1,10 +1,9 @@
 import { signIn } from "@/auth";
-import Google from "next-auth/providers/google";
 
 export function SignIn() {
   return (
     <form
-      action={async (formData) => {
+      action={async () => {
         "use server";
         await signIn("google");
       }}

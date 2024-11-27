@@ -19,7 +19,7 @@ export default async function page() {
   return (
     <div>
       <form
-        action={async (formData) => {
+        action={async () => {
           "use server";
           await signOut();
         }}
