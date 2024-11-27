@@ -1,5 +1,4 @@
 "use client";
-
 import { signInWithGitHub, signInWithGoogle } from "../actions";
 
 export function SignIn() {
