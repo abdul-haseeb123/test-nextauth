@@ -1,3 +1,6 @@
+import { sql } from "@vercel/postgres";
+
 export async function GET() {
-  return Response.json({ message: "Hello from the testdb API!" });
+  const { rows } = await sql`SELECT * FROM products`;
+  return Response.json(rows);
 }
